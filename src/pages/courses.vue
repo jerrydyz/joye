@@ -1,6 +1,7 @@
 <template>
   <div class="courses">
-    {{msg}}
+    <div>{{msg}}</div>
+    <tabbar></tabbar>
   </div>
 </template>
 

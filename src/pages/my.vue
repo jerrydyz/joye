@@ -1,6 +1,7 @@
 <template>
   <div class="my">
-    {{msg}}
+    <div>{{msg}}</div>
+    <tabbar></tabbar>
   </div>
 </template>
 

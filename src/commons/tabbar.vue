@@ -30,11 +30,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 .tabbar {
-  position: fixed;left: 0;bottom: 0;width: 100%;height: 0.96rem;box-sizing:border-box;padding: 0 .2rem;z-index: 1000;
+  position: absolute;left: 0;bottom: 0;width: 100%;height: 0.96rem;box-sizing:border-box;padding: 0 .2rem;
   ul {width: 100%;height: 100%;list-style-type: none;padding: 0;display:flex;justify-content:space-between;
-    li {width: .6rem;height: 100%;
+    li {width: 1rem;height: 100%;
       .router-link-active{color:#e81d1b;}
-      a{display:block;width: 100%;height: 100%;color:#3d1207;text-decoration: none;font-size: .15rem;
+      a{display:block;width: 100%;height: 100%;color:#3d1207;text-decoration: none;font-size: .2rem;
         i{display:block;text-align: center;}
         span{display:block;text-align: center;}
       }
@@ -42,5 +42,5 @@ export default {
     
   }
 }
-.iconfont {font-size: 30px;}
+.iconfont {font-size: .49rem;}
 </style>

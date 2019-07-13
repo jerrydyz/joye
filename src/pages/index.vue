@@ -4,7 +4,8 @@
     <img src="/static/images/index/steps.png" alt="" class="steps">
     <img src="/static/images/index/now-news.png" alt="" class="news">
     <img src="/static/images/index/jidi.png" alt="" class="jidi">
-    
+    <div>{{msg}}</div>
+    <tabbar></tabbar>
   </div>
 </template>
 

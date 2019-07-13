@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <router-view/>
-    <tabbar></tabbar>
   </div>
   
 </template>
@@ -13,15 +12,17 @@ export default {
 </script>
 
 <style>
-html{position: fixed;font-size: .22rem;}
-body{width: 7.5rem;margin: 0;padding: 0;}
+
+body{width: 7.5rem;}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 13rem;
+  font-size: .22rem;
+  color:#000;
 }
-*{
+*{  
+    margin: 0;padding: 0;
     -webkit-tap-highlight-color: transparent; 
  }
 </style>
