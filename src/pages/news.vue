@@ -1,7 +1,6 @@
 <template>
   <div class="news">
     {{msg}}
-    <tabbar></tabbar>
   </div>
 </template>
 

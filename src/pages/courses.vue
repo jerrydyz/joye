@@ -1,7 +1,6 @@
 <template>
   <div class="courses">
     {{msg}}
-    <tabbar></tabbar>
   </div>
 </template>
 

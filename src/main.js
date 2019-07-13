@@ -17,7 +17,7 @@ console.log(htmlWidth);
 //得到html的Dom元素
 let htmlDom = document.getElementsByTagName('html')[0];
 //设置根元素字体大小
-htmlDom.style.fontSize= htmlWidth/375*100 + 'px';
+htmlDom.style.fontSize= htmlWidth/750*100 + 'px';
 
 /* eslint-disable no-new */
 new Vue({
