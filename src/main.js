@@ -13,8 +13,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import './assets/iconfont/iconfont.css'
+import axios from 'axios'
+Vue.prototype.$axios= axios
 
+import './assets/iconfont/iconfont.css'
 import tabbar from '@/commons/tabbar'
 Vue.component("tabbar", tabbar)
 

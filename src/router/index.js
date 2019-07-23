@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import login from '@/pages/login'
+import register from '@/pages/register'
+import resetpw from '@/pages/resetpw'
 import index from '@/pages/index'
 import courses from '@/pages/courses'
 import news from '@/pages/news'
@@ -15,6 +17,16 @@ export default new Router({
       path: '/',
       name: 'login',
       component: login
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: register
+    },
+    {
+      path: '/resetpw',
+      name: 'resetpw',
+      component: resetpw
     },
     {
       path: '/index',

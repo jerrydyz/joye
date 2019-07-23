@@ -18,7 +18,7 @@ body{width: 7.5rem;}
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: .22rem;
+  font-size: .24rem;
   color:#000;
 }
 *{  

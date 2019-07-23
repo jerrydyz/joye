@@ -1,94 +1,29 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+  <div class="login">
+    <input type="text" placeholder="请输入身份证号" maxlength="18" class="idcard" v-model="idcard">
+    <input type="password" placeholder="请输入密码" class="login-pw" v-model="pw">
+    <div class="btns-box">
+      <router-link to="/register">新学员注册</router-link>
+      <router-link to="/resetpw">忘记密码</router-link>
+    </div>
+    <button class="confirm" @click="tijiao">确定</button>
+    <a href="https://www.hnzjgl.gov.cn">跳转</a>
+    
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'login',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      idcard: '',
+      pw: '',
+    }
+  },
+  methods: {
+    tijiao(){
+      this.$router.push('/index');
     }
   }
 }
@@ -96,20 +31,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-  li {
-    display: inline-block;
-    margin: 0 10px;
-    a {
-      color: #42b983;
+  input,button{border: 0;}
+  .login{
+    input{width: 6.1rem;height: .8rem;border-bottom: 1px solid #c6c6c6;display: block;}
+    input::-webkit-input-placeholder {font-size: .28rem;color: #c6c6c6;}
+    .idcard{margin: .4rem auto 0;}
+    .login-pw{margin: .4rem auto 0;}
+    .btns-box{width: 6.1rem;height: .8rem;margin: .4rem auto 0;display: flex;justify-content: space-between;align-items: center;
+      a{text-decoration: none;color: #ff360d; font-size: .28rem;}
     }
+    .confirm{width: 3.16rem;height: 0.9rem;font-size: .32rem;line-height: .9rem;text-align: center;border-radius: .2rem;margin: 0 auto;display: block;}
   }
-  
-}
 
 </style>
