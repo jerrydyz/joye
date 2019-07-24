@@ -9,6 +9,7 @@
     <button class="confirm" @click="tijiao">确定</button>
     <a href="https://www.hnzjgl.gov.cn">跳转</a>
     
+    
   </div>
 </template>
 

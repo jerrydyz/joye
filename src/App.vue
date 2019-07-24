@@ -24,5 +24,6 @@ body{width: 7.5rem;}
 *{  
     margin: 0;padding: 0;
     -webkit-tap-highlight-color: transparent; 
+    background-size: 100%;background-repeat: no-repeat;
  }
 </style>

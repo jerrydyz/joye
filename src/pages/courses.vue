@@ -1,5 +1,8 @@
 <template>
   <div class="courses">
+    <div class="courses-box">
+      <div class="courses-item" v-for="item in courses" :key="item.vid" @click="course(item.vid)">{{item.title}}</div>
+    </div>
     <div>{{msg}}</div>
     <tabbar></tabbar>
   </div>
@@ -10,7 +13,8 @@ export default {
   name: "courses",
   data() {
     return {
-      msg: ""
+      msg: "",
+      courses:[{vid:"1",title:"视屏1"},{vid:"4",title:"视屏4"},{vid:"10",title:"视屏10"}]
     };
   },
   mounted() {
@@ -22,18 +26,20 @@ export default {
       .catch(response => {
         console.log(response);
       });
+  },
+  methods:{
+    course(vId){
+      console.log(vId)
+    }
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-ul {
-  list-style-type: none;
-  padding: 0;
-  li {
-    display: inline-block;
-    margin: 0 10px;
+.courses{width: 100%;
+  .courses-box{width: 6.9rem;margin: 0 auto;
+    .courses-item{width: 100%;height: 2.1rem; margin: .3rem auto 0;box-shadow: 0 0 .1rem #ccc;}
   }
 }
 </style>
